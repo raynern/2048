@@ -1,0 +1,64 @@
+/* Custom */
+
+body {
+  background-color: #05425c;
+}
+
+#root {
+  font-family: "Overpass";
+}
+
+#gameBoard {
+  position: relative;
+  height: 40vh;
+  transition: boxShadow 0s linear;
+}
+
+#gameKey {
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 0;
+}
+
+.button {
+  border-width: 0;
+  background-color: #eb9a28;
+}
+
+.button:active {
+  transform: scale(1.1);
+}
+
+#gameButton {
+  border-radius: 20%;
+}
+
+div.informative {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#quote {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #cdf6ff;
+}
+
+.card {
+  padding: 2em;
+}
+
+.tile {
+  font-size: 5vw;
+}
+
+@media (min-width: 480px) {
+  .tile {
+    font-size: 1.5rem;
+  }
+}
