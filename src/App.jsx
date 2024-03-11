@@ -11,6 +11,13 @@ let unlocked = true;
 
 const SWIPE_DURATION = 300;
 
+const arrowMap = {
+  ArrowDown: "down",
+  ArrowUp: "up",
+  ArrowLeft: "left",
+  ArrowRight: "right",
+};
+
 function App() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gameDifficulty, setGameDifficulty] = useState(5);
@@ -48,12 +55,6 @@ function App() {
   }
 
   useEffect(() => {
-    const arrowMap = {
-      ArrowDown: "down",
-      ArrowUp: "up",
-      ArrowLeft: "left",
-      ArrowRight: "right",
-    };
     function handleKeyDown(e) {
       if (
         (e.key == "ArrowDown" ||
